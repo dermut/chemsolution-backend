@@ -6,13 +6,10 @@
 </head>
 <body>
     <header th:fragment="header">
-        <nav class="uk-navbar-container">
-            <img src="images/main_logo.png" class="uk-align-left">
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#"></a></li>
-                </ul>
-            </div>
+        <nav class="uk-navbar-container uk-navbar-transparent">
+            <a th:href="@{/}">
+                <img src="images/main_logo.png" class="uk-align-left" alt="chemsolution">
+            </a>
         </nav>
     </header>
 </body>
