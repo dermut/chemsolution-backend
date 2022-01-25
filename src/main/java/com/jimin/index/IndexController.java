@@ -1,15 +1,13 @@
 package com.jimin.index;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class IndexController {
 
     @GetMapping("/")
-    public ModelAndView index() {
-        ModelAndView mav = new ModelAndView("index");
-        return mav;
+    public String index() {
+        return "Hello, World!";
     }
 }
